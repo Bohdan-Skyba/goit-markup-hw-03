@@ -25,6 +25,19 @@ hero-text-color: #ffffff;
   --font-base2: Roboto, sans-serif;
   --border-color1: #eeeeee;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 a {
   text-decoration: none;
 }
@@ -51,6 +64,7 @@ img {
   display: block;
 }
 .container {
+  box-sizing: border-box;
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
@@ -396,7 +410,7 @@ img {
   margin-bottom: 20px;
 }
 
-/* footer address */
+/* footer-address */
 .footer-map-address-mail-tel {
   color: var(--background-base-nav-button-text);
   font-family: Roboto, sans-serif;
@@ -408,6 +422,10 @@ img {
 
   margin: 0;
 }
+.footer-address-list {
+  display: inline-block;
+  margin-top: 9px;
+}
 .footer-mail-tel-address {
   color: rgba(255, 255, 255, 0.6);
   font-family: Roboto, sans-serif;
@@ -416,9 +434,6 @@ img {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-
-  display: inline-block;
-  margin-top: 9px;
 }
 
 /* portfolio */
@@ -532,7 +547,7 @@ img {
   display: block;
 }
 .card-title-container {
-  width: 321px;
+  width: 370px;
   padding-top: 20px;
   padding-right: 24px;
   padding-bottom: 20px;
