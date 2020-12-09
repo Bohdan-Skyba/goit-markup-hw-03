@@ -179,6 +179,8 @@ img {
   height: 600px;
   margin: auto;
   text-align: center;
+  background-image: url('../image/img-hero.jpg');
+  background-position: 50% 50%;
   background-color: var(--background-hero-footer);
 }
 .hero-title {
@@ -408,6 +410,11 @@ img {
 
   margin: 0;
 }
+.footer-address-list {
+  display: flex;
+  margin-bottom: 9px;
+}
+
 .footer-mail-tel-address {
   color: rgba(255, 255, 255, 0.6);
   font-family: Roboto, sans-serif;
@@ -416,9 +423,6 @@ img {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-
-  display: inline-block;
-  margin-top: 9px;
 }
 
 /* portfolio */
